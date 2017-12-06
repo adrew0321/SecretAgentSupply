@@ -102,6 +102,9 @@ ul.container {
   padding: 0.75rem 0px;
 }
 
+.mobile-nav {
+  display: none;
+}
 
 /*--Product Grid--*/
 
@@ -185,4 +188,33 @@ footer {
   padding: 5rem 0px;
   text-align: left;
 
+}
+
+/*--CSS Ruleset for screens < 1024px--*/
+@media only screen and (max-width: 1024px) {
+  ul.container {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
+    padding: 0.75rem 0px;
+  }
+
+  .item {
+    width: 47%;
+  }
+
+  .item.glasses {
+    display: none;
+  }
+
+  .location {
+    width: 35%;
+  }
+
+  .hour {
+    width: 35%;
+  }
 }
